@@ -43,6 +43,7 @@ namespace QuadraticEquation
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Assertive;
             this.label1.Location = new System.Drawing.Point(135, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -86,6 +87,7 @@ namespace QuadraticEquation
             // ATextBox
             // 
             this.ATextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ATextBox.ForeColor = System.Drawing.Color.Navy;
             this.ATextBox.Location = new System.Drawing.Point(16, 16);
             this.ATextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ATextBox.Name = "ATextBox";
@@ -96,6 +98,7 @@ namespace QuadraticEquation
             // BTextBox
             // 
             this.BTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BTextBox.ForeColor = System.Drawing.Color.Navy;
             this.BTextBox.Location = new System.Drawing.Point(200, 16);
             this.BTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.BTextBox.Name = "BTextBox";
@@ -106,6 +109,7 @@ namespace QuadraticEquation
             // CTextBox
             // 
             this.CTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CTextBox.ForeColor = System.Drawing.Color.Navy;
             this.CTextBox.Location = new System.Drawing.Point(364, 16);
             this.CTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CTextBox.Name = "CTextBox";
@@ -139,7 +143,7 @@ namespace QuadraticEquation
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ForeColor = System.Drawing.Color.Navy;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
