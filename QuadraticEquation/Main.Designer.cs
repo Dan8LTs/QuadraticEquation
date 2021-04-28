@@ -53,13 +53,15 @@ namespace QuadraticEquation
             // 
             // DisplayAnswerButton
             // 
+            this.DisplayAnswerButton.BackColor = System.Drawing.Color.AliceBlue;
+            this.DisplayAnswerButton.ForeColor = System.Drawing.Color.Navy;
             this.DisplayAnswerButton.Location = new System.Drawing.Point(16, 61);
             this.DisplayAnswerButton.Margin = new System.Windows.Forms.Padding(4);
             this.DisplayAnswerButton.Name = "DisplayAnswerButton";
             this.DisplayAnswerButton.Size = new System.Drawing.Size(141, 42);
             this.DisplayAnswerButton.TabIndex = 1;
             this.DisplayAnswerButton.Text = "Display answer";
-            this.DisplayAnswerButton.UseVisualStyleBackColor = true;
+            this.DisplayAnswerButton.UseVisualStyleBackColor = false;
             this.DisplayAnswerButton.Click += new System.EventHandler(this.DisplayAnswerButton_Click);
             // 
             // label2
@@ -86,6 +88,7 @@ namespace QuadraticEquation
             // 
             // ATextBox
             // 
+            this.ATextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ATextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ATextBox.ForeColor = System.Drawing.Color.Navy;
             this.ATextBox.Location = new System.Drawing.Point(16, 16);
