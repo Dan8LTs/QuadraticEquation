@@ -56,7 +56,7 @@ namespace QuadraticEquation
             this.DisplayAnswerButton.Location = new System.Drawing.Point(16, 61);
             this.DisplayAnswerButton.Margin = new System.Windows.Forms.Padding(4);
             this.DisplayAnswerButton.Name = "DisplayAnswerButton";
-            this.DisplayAnswerButton.Size = new System.Drawing.Size(123, 42);
+            this.DisplayAnswerButton.Size = new System.Drawing.Size(141, 42);
             this.DisplayAnswerButton.TabIndex = 1;
             this.DisplayAnswerButton.Text = "Display answer";
             this.DisplayAnswerButton.UseVisualStyleBackColor = true;
@@ -90,10 +90,13 @@ namespace QuadraticEquation
             this.ATextBox.ForeColor = System.Drawing.Color.Navy;
             this.ATextBox.Location = new System.Drawing.Point(16, 16);
             this.ATextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ATextBox.MaxLength = 10;
             this.ATextBox.Name = "ATextBox";
+            this.ATextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.ATextBox.Size = new System.Drawing.Size(111, 37);
             this.ATextBox.TabIndex = 6;
             this.ATextBox.Text = "";
+            this.ATextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ATextBox_KeyDown);
             // 
             // BTextBox
             // 
@@ -101,10 +104,13 @@ namespace QuadraticEquation
             this.BTextBox.ForeColor = System.Drawing.Color.Navy;
             this.BTextBox.Location = new System.Drawing.Point(200, 16);
             this.BTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.BTextBox.MaxLength = 10;
             this.BTextBox.Name = "BTextBox";
+            this.BTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.BTextBox.Size = new System.Drawing.Size(111, 37);
             this.BTextBox.TabIndex = 7;
             this.BTextBox.Text = "";
+            this.BTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BTextBox_KeyDown);
             // 
             // CTextBox
             // 
@@ -112,20 +118,23 @@ namespace QuadraticEquation
             this.CTextBox.ForeColor = System.Drawing.Color.Navy;
             this.CTextBox.Location = new System.Drawing.Point(364, 16);
             this.CTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CTextBox.MaxLength = 10;
             this.CTextBox.Name = "CTextBox";
+            this.CTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.CTextBox.Size = new System.Drawing.Size(111, 37);
             this.CTextBox.TabIndex = 8;
             this.CTextBox.Text = "";
+            this.CTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CTextBox_KeyDown);
             // 
             // AnswerTextBox
             // 
             this.AnswerTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AnswerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AnswerTextBox.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.AnswerTextBox.Location = new System.Drawing.Point(156, 61);
+            this.AnswerTextBox.Location = new System.Drawing.Point(200, 61);
             this.AnswerTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.AnswerTextBox.Name = "AnswerTextBox";
-            this.AnswerTextBox.Size = new System.Drawing.Size(132, 65);
+            this.AnswerTextBox.Size = new System.Drawing.Size(275, 65);
             this.AnswerTextBox.TabIndex = 9;
             this.AnswerTextBox.Text = "";
             // 
@@ -133,6 +142,7 @@ namespace QuadraticEquation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Honeydew;
             this.ClientSize = new System.Drawing.Size(596, 236);
             this.Controls.Add(this.AnswerTextBox);
             this.Controls.Add(this.CTextBox);
@@ -144,6 +154,7 @@ namespace QuadraticEquation
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Navy;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace QuadraticEquation
 {
@@ -19,16 +20,25 @@ namespace QuadraticEquation
         {
             double discriminant;
             discriminant = b * b - 4 * a * c;
+            char symbol = '=';
             if (discriminant > 0)
             {
                 double x1 = (-1 * b + Math.Sqrt(discriminant)) / (2 * a);
                 double x2 = (-1 * b - Math.Sqrt(discriminant)) / (2 * a);
-                return $"x1 = {x1}; x2 = {x2}";
+                if(x1 != Math.Round(x1, 2))
+                {
+                    symbol = '≈';
+                }
+                return $"x1 {symbol} {Math.Round(x1, 2)}; x2 {symbol} {Math.Round(x2, 2)}";
             }
             else if (discriminant == 0)
             {
                 double x = (-1 * b) / (2 * a);
-                return $"x = {x}";
+                if (x != Math.Round(x, 2))
+                {
+                    symbol = '≈';
+                }
+                return $"x {symbol} {Math.Round(x, 2)}";
             }
             return "No solutions";
         }
